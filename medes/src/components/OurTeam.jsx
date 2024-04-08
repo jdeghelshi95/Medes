@@ -1,9 +1,10 @@
+import PastorPic from "../img/pastor.jpg"
+
 const people = [
     {
       name: 'David Eghelshi',
       role: 'Lead Pastor',
-      imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      imageUrl:{PastorPic},
       location: 'Plainfield NJ, USA',
     },
     // More people...
@@ -26,7 +27,7 @@ const people = [
           >
             {people.map((person) => (
               <li key={person.name}>
-                <img className="aspect-[14/13] w-full rounded-2xl object-cover" src={person.imageUrl} alt="" />
+                <img className="aspect-[14/13] w-full rounded-2xl object-cover" src={PastorPic} alt="" />
                 <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">{person.name}</h3>
                 <p className="text-base leading-7 text-gray-300">{person.role}</p>
                 <p className="text-sm leading-6 text-gray-500">{person.location}</p>
