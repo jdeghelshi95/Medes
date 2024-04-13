@@ -1,11 +1,11 @@
 import backGround from "../img/DO01000884-3.jpg"
-export default function Example() {
+export default function Header() {
     return (
-      <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+      <div className="relative isolate overflow-hidden bg-blend-darken bg-gray-900 py-24 sm:py-32">
         <img
           src= {backGround}
           alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
+          className="bg-blend-darken brightness-50 absolute inset-0 -z-10 h-full w-full object-cover"
         />
         <div
           className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
